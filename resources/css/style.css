@@ -1,0 +1,168 @@
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #534b42;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: #ff9700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+/* Menu */
+
+.menu {
+  height: 100%;
+  background: #fff;
+  width: 20%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 99999;
+}
+
+.menu nav>a {
+  padding: 10px 20px;
+  position: relative;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #534b42;
+  font-weight: bold;
+}
+
+.menu-logo {
+  width: 50%;
+  padding: 1rem;
+}
+
+.menu-contact {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+
+/* Page wrapper */
+
+.sections {
+  position: absolute;
+	right: 0;
+	width: 80%;
+}
+
+/* Banner */
+
+header {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 380px;
+  padding-top: 2rem;
+}
+
+/* About */
+
+.about {
+  color: #fff;
+  background-color: #534B42;
+  padding: 2rem;
+}
+
+.about-container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-right {
+  width: 50%;
+}
+
+/* Testimonials */
+.main {
+  font-family:Arial;
+  width:500px;
+  display:block;
+  margin:0 auto;
+}
+
+/*Services */
+
+.services {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item {
+  border: 1px solid #fff;
+  width: calc( 100% / 3); /* 4 is how many .child divs you have */
+  height: 250px;
+
+}
+
+.service-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#service1-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/venue-finding.jpeg");
+  background-size: contain;
+  height: 300px;
+  position: relative;
+}
+
+#service2-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/event-management.jpeg");
+  background-size: contain;
+  height: 300px;
+}
+
+#service3-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/incentive-travel.jpeg");
+  background-size: contain;
+  height: 300px;
+}
+
+#service4-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/team-activity.jpeg");
+  background-size: contain;
+  height: 300px;
+}
+
+#service5-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/production.jpeg");
+  background-size: contain;
+  height: 300px;
+}
+
+#service6-img {
+  background-image: url("File://C:/Users/Louise87/Desktop/tyler/resources/images/online-registration.jpeg");
+  background-size: contain;
+  height: 300px;
+}
