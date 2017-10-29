@@ -163,10 +163,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 /* Testimonials */
 
 .main-gallery {
-  background: #fff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  border-top: solid 10px #7AA641;
-
+  background-color: #f1f1f1;
 }
 
 .gallery-cell {
@@ -176,7 +173,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial {
   text-align: center;
   max-width: 850px;
-  margin: 100px auto 130px auto;
+  margin: 50px auto 50px auto;
   padding: 0 20px;
 }
 
@@ -187,7 +184,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .testimonial-quote {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   padding: 10px 0;
 }
@@ -195,7 +192,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #7AA641;
+  color: #ff9700;
 }
 
 .flickity-page-dots {
@@ -203,19 +200,12 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #7AA641;
-}
-
-
-.container {
-
-max-width:940px;
-margin:0 auto;
+  background: #ff9700;
 }
 
 #testimonials {
-  margin:0 auto;
-  width:940px;
+  margin: 2rem auto;
+  width: 100%;
 }
 
 /*Services */
