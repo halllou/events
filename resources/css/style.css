@@ -18,10 +18,18 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2.1rem;
-  margin: 2rem 32rem;
   padding-bottom: 1rem;
   font-weight: bold;
   border-bottom: 1px solid #ff9700;
+}
+
+h3 {
+  margin: 1rem 0 0.5rem 0;
+}
+
+h4 {
+  margin: 0 0 0.5rem 0;
+  color: #ff9700;
 }
 
 /* Menu */
@@ -125,18 +133,29 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .banner-text {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 2rem 5rem;
 
 }
 
+#section-icon {
+  text-align: center;
+  margin: 2rem 0 0 0;
+  padding-bottom: 0;
+}
+
 /* Wrapper */
+
 .wrapper {
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 /* About */
+
+#about {
+  margin: 2rem 45rem;
+}
 
 .about {
   color: #534B42;
@@ -146,8 +165,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .about-container {
   padding-top: 1rem;
-  display: flex;
-  flex-direction: row;
+
 }
 
 .about-left {
@@ -160,10 +178,41 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin-left: 1rem;
 }
 
+.meet-team {
+  width: 100%;
+  margin: 3rem 0 3rem 0;
+}
+
+.team-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.team-member img {
+  width: 250px;
+}
+
+
 /* Testimonials */
 
+#testimonial-heading {
+  margin: 0 47rem 2rem 47rem;
+}
+
 .main-gallery {
-  background-color: #f1f1f1;
+  background-color: #e1e1e1;
 }
 
 .gallery-cell {
@@ -180,6 +229,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial-avatar {
   width: 100px;
   border-radius: 50%;
+  border: 2px solid #ff9700;
 }
 
 .testimonial-quote {
@@ -197,6 +247,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .flickity-page-dots {
   bottom: 25px;
+  padding-bottom: 1rem;
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -204,11 +255,15 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 #testimonials {
-  margin: 2rem auto;
+  margin: 2rem auto 4rem auto;
   width: 100%;
 }
 
 /*Services */
+
+#services-heading {
+  margin: 0 49rem 2rem 49rem;
+}
 
 .container {
   position: relative;
