@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tyler Events | Event Management &amp; Venue Finding Experts</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +12,7 @@
   <body>
     <!-- Menu -->
     <header>
+      <!-- Desktop nav -->
       <div class="navbar">
         <a href="#"><img class="menu-logo" src="./resources/images/logo.png"></a>
         <nav>
@@ -32,6 +33,27 @@
           </div>
         </nav>
       </div>
+      <!-- Mobile nav -->
+      <div class="mobile-navbar">
+        <a href="#"><img class="menu-logo" src="./resources/images/logo.png"></a>
+        <nav>
+          <div class="dropdown">
+            <button class="dropbtn">Menu
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./index.html">Home</a>
+              <a href="./index.html#about">About us</a>
+              <a href="#">Venue Finding</a>
+              <a href="#">Event Management</a>
+              <a href="#">Incentive Travel</a>
+              <a href="#">Team Activities</a>
+              <a href="#">Production</a>
+              <a href="#">Online Registration &amp; Event Services</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- Banner -->
     <section class="banner">
@@ -43,55 +65,86 @@
     <!-- Main section wrapper -->
     <div class="wrapper">
       <!-- About us -->
+      <h2 class="underline">About us</h2>
       <section class="about">
-        <h2 id="about">About us</h2>
         <div class="about-container">
           <p>With experience of managing events in the UK and around the world, we can breathe life and imagination into your ideas - creating a personal solution to meet your requirements.</p>
           <p>We offer small, highly trained teams, including our directors Jo and James, who share a wealth of experience in the corporate event industry and have worked with companies such as RBS, AstraZeneca and Ernst &amp; Young.</p>
-            <ul>
-              <li>Friendly, dedicated and experienced staff</li>
-              <li>Director led teams</li>
-              <li>Breadth of UK and international expertise</li>
-              <li>Advanced online registration systems</li>
-              <li>Delegate communication</li>
-              <li>Event programme development</li>
-              <li>Supplier liaison</li>
-              <li>Economies of scale</li>
-            </ul>
+          <ul>
+            <li>Friendly, dedicated and experienced staff</li>
+            <li>Director led teams</li>
+            <li>Breadth of UK and international expertise</li>
+            <li>Advanced online registration systems</li>
+            <li>Delegate communication</li>
+            <li>Event programme development</li>
+            <li>Supplier liaison</li>
+            <li>Economies of scale</li>
+          </ul>
         </div>
       </section>
-        <h2 id="about">Meet the team</h2>
-        <section class="meet-team">
-        <div class="team-section">
-          <div class="team-member">
-            <img src="./resources/images/jo.jpg">
-            <h3>Joanna Tyler</h3>
-            <h4>Owner</h4>
-          </div>
-          <div class="team-member">
-            <img src="./resources/images/james.jpg">
-            <h3>James Tyler</h3>
-            <h4>Managing Director</h4>
-          </div>
-          <div class="team-member">
-            <img src="./resources/images/simon.jpg">
-            <h3>Simon Price</h3>
-            <h4>Senior Project Manager</h4>
-          </div>
-          <div class="team-member">
-            <img src="./resources/images/jen.jpg">
-            <h3>Jen Ball</h3>
-            <h4>Event Manager</h4>
-          </div>
-          <div class="team-member">
-            <img src="./resources/images/bethan.jpg">
-            <h3>Bethan Smallshaw</h3>
-            <h4>Event Manager</h4>
-          </div>
-        </div>
+      <!-- Meet the team -->
+      <section>
+        <h2 class="underline">Meet the team</h2>
+        <ul class="caption-style-2">
+          <!-- Team Member 1 -->
+          <li>
+            <img src="./resources/images/jo.jpg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Jo Tyler</h1>
+                <p>Owner</p>
+              </div>
+            </div>
+          </li>
+          <!-- Team Member 2 -->
+          <li>
+            <img src="./resources/images/james.jpg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>James Tyler</h1>
+                <p>Managing Director</p>
+              </div>
+            </div>
+          </li>
+          <!-- Team Member 3 -->
+          <li>
+            <img src="./resources/images/simon.jpg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Simon Price</h1>
+                <p>Project Manager</p>
+              </div>
+            </div>
+          </li>
+          <!-- Team Member 4 -->
+          <li>
+            <img src="./resources/images/jen.jpg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Jen Ball</h1>
+                <p>Event Manager</p>
+              </div>
+            </div>
+          </li>
+          <!-- Team Member 5 -->
+          <li>
+            <img src="./resources/images/bethan.jpg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Bethan Smallshaw</h1>
+                <p>Event Manager</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
       <!-- Testimonials -->
-      <h2 id="testimonial-heading">Testimonials</h2>
+      <h2 class="underline">Testimonials</h2>
       <section id="testimonials">
         <div class="main-gallery">
           <!-- Testimonial 1 -->
@@ -121,61 +174,77 @@
         </div>
       </section>
     </div>
-    <!-- Services -->
+    <!-- Services section -->
+    <section>
       <div class="wrapper">
-    <section class="services-section">
-      <h2 id="services-heading">Services</h2>
-      <div class="services">
-        <div class="container">
-          <img src="./resources/images/venue-finding.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Venue Finding</a>
+        <h2 class="underline">Services</h2>
+        <div class="services-section">
+          <ul class="caption-style-1">
+            <!-- Service 1 -->
+            <li>
+              <img src="./resources/images/venue-finding.jpeg" alt="">
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>Venue Finding</h1>
+                  <p class="service-cta">Click for more information</p>
+                </div>
+              </div>
+            </li>
+            <!-- Service 2 -->
+            <li>
+              <img src="./resources/images/event-management.jpeg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Event Management</h1>
+                <p class="service-cta">Click for more information</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./resources/images/event-management.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Event Management</a>
+          </li>
+          <!-- Service 3 -->
+          <li> <img src="./resources/images/incentive-travel.jpeg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Incentive Travel</h1>
+                <p class="service-cta">Click for more information</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./resources/images/incentive-travel.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Incentive Travel</a>
+          </li>
+        </ul>
+        <!-- Service 4 -->
+        <ul class="caption-style-1">
+          <li> <img src="./resources/images/team-activity.jpeg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Team Activities</h1>
+                <p class="service-cta">Click for more information</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="services">
-        <div class="container">
-          <img src="./resources/images/team-activity.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Team Activities</a>
+          </li>
+          <!-- Service 5 -->
+          <li> <img src="./resources/images/production.jpeg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Production</h1>
+                <p class="service-cta">Click for more information</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./resources/images/production.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Production</a>
+          </li>
+          <!-- Service 6 -->
+          <li> <img src="./resources/images/online-registration.jpeg" alt="">
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>Online Registration &amp; Event Management</h1>
+                <p class="service-cta">Click for more information</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <img src="./resources/images/online-registration.jpeg" alt="Avatar" class="image" style="width:100%">
-          <div class="middle">
-            <div class="text">
-              <a href="#">Online Registration &amp; Event Services</a>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
     </section>
@@ -193,3 +262,95 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
 </html>
+
+<!-- Old services section
+<div class="wrapper">
+        <h2 class="underline">Services</h2>
+<section class="services-section">
+
+  <div class="services">
+    <div class="container">
+      <img src="./resources/images/venue-finding.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Venue Finding</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./resources/images/event-management.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Event Management</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./resources/images/incentive-travel.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Incentive Travel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="services">
+    <div class="container">
+      <img src="./resources/images/team-activity.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Team Activities</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./resources/images/production.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Production</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="./resources/images/online-registration.jpeg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="#">Online Registration &amp; Event Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section> -->
+
+<!-- Old meet the team section
+        <h2 class="underline">Meet the team</h2>
+        <section class="meet-team">
+        <div class="team-section">
+          <div class="team-member">
+            <img src="./resources/images/jo.jpg">
+            <h3>Joanna Tyler</h3>
+            <h4>Owner</h4>
+          </div>
+          <div class="team-member">
+            <img src="./resources/images/james.jpg">
+            <h3>James Tyler</h3>
+            <h4>Managing Director</h4>
+          </div>
+          <div class="team-member">
+            <img src="./resources/images/simon.jpg">
+            <h3>Simon Price</h3>
+            <h4>Senior Project Manager</h4>
+          </div>
+          <div class="team-member">
+            <img src="./resources/images/jen.jpg">
+            <h3>Jen Ball</h3>
+            <h4>Event Manager</h4>
+          </div>
+          <div class="team-member">
+            <img src="./resources/images/bethan.jpg">
+            <h3>Bethan Smallshaw</h3>
+            <h4>Event Manager</h4>
+          </div>
+        </div>
+      </section> -->

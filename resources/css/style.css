@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #ff9700;
+  color: #FF7800;
   font-size: 2.4rem;
   font-weight: bolder;
   text-align: center;
@@ -20,8 +20,19 @@ h2 {
   font-size: 2.1rem;
   padding-bottom: 1rem;
   font-weight: bold;
-  border-bottom: 1px solid #ff9700;
+  text-decoration: underline;
+  text-decoration-color: #FF7800;
+  text-decoration-style: solid;
 }
+
+.underline {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid #FF7800;
+	margin-bottom: -1px;
+}
+
 
 h3 {
   margin: 1rem 0 0.5rem 0;
@@ -29,7 +40,7 @@ h3 {
 
 h4 {
   margin: 0 0 0.5rem 0;
-  color: #ff9700;
+  color: #FF7800;
 }
 
 /* Menu */
@@ -80,7 +91,9 @@ h4 {
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-    border-bottom: 2px solid #ff9700;
+  text-decoration: underline;
+  text-decoration-color: #FF7800;
+
 }
 
 .dropdown-content {
@@ -117,6 +130,22 @@ nav a:hover, .dropdown:hover .dropbtn {
   opacity: 1;
 }
 
+@media only screen and (min-width: 823px)  {
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 824px)  {
+  .navbar {
+    display: none;
+  }
+}
+
+.fa-bars {
+  font-size: 20px;
+}
+
 /* Banner */
 
 .banner {
@@ -149,18 +178,16 @@ nav a:hover, .dropdown:hover .dropbtn {
 .wrapper {
   margin-left: 3rem;
   margin-right: 3rem;
+  text-align: center;
 }
 
 /* About */
 
-#about {
-  margin: 2rem 45rem;
-}
-
 .about {
   color: #534B42;
-  padding: 0 4rem 2rem 4rem;
+  padding: 0 4rem 0rem 4rem;
   margin: 0;
+  text-align: left;
 }
 
 .about-container {
@@ -183,33 +210,80 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin: 3rem 0 3rem 0;
 }
 
-.team-section {
+
+/* Team section */
+
+.caption-style-2 {
+  list-style-type: none;
+  margin: 2rem 0;
+  padding: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.team-member {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 1rem;
+.caption-style-2 li {
+  float: left;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
 }
 
-.team-member img {
+.caption-style-2 li:hover .caption {
+  opacity: 1;
+  transform: translateY(-100px);
+  -webkit-transform:translateY(-100px);
+  -moz-transform:translateY(-100px);
+  -ms-transform:translateY(-100px);
+  -o-transform:translateY(-100px);
+}
+
+.caption-style-2 img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
   width: 250px;
 }
 
+.caption-style-2 .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top:250px;
+  -webkit-transition:all 0.15s ease-in-out;
+  -moz-transition:all 0.15s ease-in-out;
+  -o-transition:all 0.15s ease-in-out;
+  -ms-transition:all 0.15s ease-in-out;
+  transition:all 0.15s ease-in-out;
+}
+
+.caption-style-2 .blur{
+  background-color: rgba(0,0,0,0.7);
+  height: 300px;
+  width: 250px;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-style-2 .caption-text h1{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.caption-style-2 .caption-text{
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  top:10px;
+}
 
 /* Testimonials */
-
-#testimonial-heading {
-  margin: 0 47rem 2rem 47rem;
-}
 
 .main-gallery {
   background-color: #e1e1e1;
@@ -229,7 +303,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial-avatar {
   width: 100px;
   border-radius: 50%;
-  border: 2px solid #ff9700;
+  border: 2px solid #FF7800;
 }
 
 .testimonial-quote {
@@ -242,7 +316,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #ff9700;
+  color: #FF7800;
 }
 
 .flickity-page-dots {
@@ -251,7 +325,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #ff9700;
+  background: #FF7800;
 }
 
 #testimonials {
@@ -259,11 +333,126 @@ nav a:hover, .dropdown:hover .dropbtn {
   width: 100%;
 }
 
-/*Services */
+/* Services setion 2 */
 
-#services-heading {
-  margin: 0 49rem 2rem 49rem;
+.services-section {
+  margin: 2rem 0 3rem 0;
 }
+
+.caption-style-1 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.caption-style-1 li {
+  float: left;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.caption-style-1 li:hover .caption {
+  opacity: 1;
+}
+.caption-style-1 img {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+  width: 400px;
+
+}
+.caption-style-1 .caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.caption-style-1 .blur {
+  background-color: rgba(0,0,0,0.65);
+  height: 300px;
+  width: 400px;
+  z-index: 5;
+  position: absolute;
+}
+.caption-style-1 .caption-text h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.caption-style-1 .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  top: 70px;
+}
+
+.service-cta {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 0 90px;
+}
+/* Footer */
+
+footer {
+  background-color: #534b42;
+  color: #fff;
+  margin: 0;
+  padding: 2rem;
+  border-top: 2px solid #fff;
+}
+
+.company-footer {
+  color: #FF7800;
+  font-weight: bold;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.copy {
+  font-size: 10px;
+}
+
+
+/* Team section old ..
+.team-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.team-member img {
+  width: 250px;
+} */
+
+/*Services old
 
 .container {
   position: relative;
@@ -274,11 +463,12 @@ nav a:hover, .dropdown:hover .dropbtn {
 .image {
   opacity: 1;
   display: block;
-  flex-grow: 1
+  flex-grow: 1;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .middle {
@@ -292,7 +482,8 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  background-color: #534b42;
+
 }
 
 .container:hover .middle {
@@ -300,13 +491,13 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .text {
-  color: #ff9700;
+  color: #FF7800;
   font-size: 16px;
   padding: 16px 32px;
   border: 1px solid #fff;
   text-align: center;
   background-color: #534B42;
-  text-transform: uppercase;
+
 }
 
 .text a {
@@ -326,29 +517,5 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .services-section {
-  margin-bottom: 3rem;
-}
-
-/* Footer */
-
-footer {
-  background-color: #534b42;
-  color: #fff;
-  margin: 0;
-  padding: 2rem;
-  border-top: 2px solid #fff;
-}
-
-.company-footer {
-  color: #ff9700;
-  font-weight: bold;
-}
-
-footer p a{
-  text-decoration: none;
-  color: #fff;
-}
-
-.copy {
-  font-size: 10px;
-}
+  margin: 2rem 0 3rem 0;
+} */
