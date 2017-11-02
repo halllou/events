@@ -8,6 +8,7 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css">
+    <link rel="stylesheet" href="./resources/css/w3.css">
   </head>
   <body>
     <!-- Menu -->
@@ -31,6 +32,7 @@
             	<a href="#">Online Registration &amp; Event Services</a>
             </div>
           </div>
+        	<a class="contact-nav" href="#">Contact us</a>
         </nav>
       </div>
       <!-- Mobile nav -->
@@ -179,7 +181,7 @@
       <div class="wrapper">
         <h2 class="underline">Services</h2>
         <div class="services-section">
-          <ul class="caption-style-1">
+          <ul class="services">
             <!-- Service 1 -->
             <li>
               <img src="./resources/images/venue-finding.jpeg" alt="">
@@ -203,7 +205,8 @@
             </div>
           </li>
           <!-- Service 3 -->
-          <li> <img src="./resources/images/incentive-travel.jpeg" alt="">
+            <li>
+            <img src="./resources/images/incentive-travel.jpeg" alt="">
             <div class="caption">
               <div class="blur"></div>
               <div class="caption-text">
@@ -212,10 +215,9 @@
               </div>
             </div>
           </li>
-        </ul>
         <!-- Service 4 -->
-        <ul class="caption-style-1">
-          <li> <img src="./resources/images/team-activity.jpeg" alt="">
+          <li>
+            <img src="./resources/images/team-activity.jpeg" alt="">
             <div class="caption">
               <div class="blur"></div>
               <div class="caption-text">
@@ -225,7 +227,8 @@
             </div>
           </li>
           <!-- Service 5 -->
-          <li> <img src="./resources/images/production.jpeg" alt="">
+          <li>
+            <img src="./resources/images/production.jpeg" alt="">
             <div class="caption">
               <div class="blur"></div>
               <div class="caption-text">
@@ -235,7 +238,8 @@
             </div>
           </li>
           <!-- Service 6 -->
-          <li> <img src="./resources/images/online-registration.jpeg" alt="">
+            <li>
+            <img src="./resources/images/online-registration.jpeg" alt="">
             <div class="caption">
               <div class="blur"></div>
               <div class="caption-text">
@@ -247,6 +251,78 @@
         </ul>
       </div>
     </div>
+    </section>
+    <!-- Contact form -->
+    <section>
+      <div class="wrapper">
+        <h2 class="underline">Contact Us</h2>
+        <p>Fill in your event requirements below and one of the team will be in touch with you shortly</p>
+        <form>
+          First name:<br>
+          <input type="text" name="firstname"><br>
+          Last name:<br>
+          <input type="text" name="lastname"><br>
+          Company:<br>
+          <input type="text" name="lastname"><br>
+          Email:<br>
+          <input type="text" name="lastname"><br>
+          Phone:<br>
+          <input type="text" name="lastname"><br>
+          Type of event:<br>
+          <select name="event-types">
+            <option value="conference">Conference</option>
+            <option value="meeting">Meeting</option>
+            <option value="training">Training</option>
+            <option value="product-launch">Product launch</option>
+            <option value="team">Team activity</option>
+            <option value="social">Social</option>
+          </select><br>
+          Number of people:<br>
+          <select name="event-types">
+            <option value="conference">Conference</option>
+            <option value="meeting">Meeting</option>
+            <option value="training">Training</option>
+            <option value="product-launch">Product launch</option>
+            <option value="team">Team activity</option>
+            <option value="social">Social</option>
+          </select><br>
+          Message:<br>
+          <textarea name="message" rows="5" cols="30"></textarea><br>
+          <input type="submit" value="Submit"><br>
+        </form>
+      </div>
+    </section>
+    <!-- Partners section -->
+    <section>
+      <div class="wrapper">
+        <h2 class="underline">Our Partners</h2>
+        <div class="carousel" data-flickity='{ "autoPlay": 1500 }'>
+          <img src="./resources/images/partners/accorhotelslogo.png" alt="Accor Hotels"/>
+          <img src="./resources/images/partners/bestwesternpluslogo.png" alt="Best Western Plus" />
+          <img src="./resources/images/partners/britanniahotelslogo.png" alt="Britannia Hotels"/>
+          <img src="./resources/images/partners/deverehotelslogo.png" />
+          <img src="./resources/images/partners/etcvenueslogo.png" />
+          <img src="./resources/images/partners/grangehotelslogo.png" />
+          <img src="./resources/images/partners/guomanlogo.gif" />
+          <img src="./resources/images/partners/hiltonlogo.gif" />
+          <img src="./resources/images/partners/holidayinnexpresslogo.png" />
+          <img src="./resources/images/partners/intercontinentalhotelslogo.png" />
+          <img src="./resources/images/partners/jurysinnlogo.gif" />
+          <img src="./resources/images/partners/malmaisonlogo.png" />
+          <img src="./resources/images/partners/marriotthotelslogo.png" />
+          <img src="./resources/images/partners/mcdonaldhotelslogo.png" />
+          <img src="./resources/images/partners/millenniumhotelslogo.png" />
+          <img src="./resources/images/partners/novotelhotelslogo.png" />
+          <img src="./resources/images/partners/parkinnlogo.png" />
+          <img src="./resources/images/partners/parkplazalogo.png" />
+          <img src="./resources/images/partners/phhotelslogo.png" />
+          <img src="./resources/images/partners/qhotelslogo.png" />
+          <img src="./resources/images/partners/redcarnationhotellogo.png" />
+          <img src="./resources/images/partners/sofitelhotelslogo.png" />
+          <img src="./resources/images/partners/thistlelogo.png" />
+          <img src="./resources/images/partners/warwickconferenceslogo.png" />
+        </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer>
@@ -260,6 +336,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
 </html>
 

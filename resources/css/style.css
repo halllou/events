@@ -23,6 +23,7 @@ h2 {
   text-decoration: underline;
   text-decoration-color: #FF7800;
   text-decoration-style: solid;
+  margin-top: 2rem!important;
 }
 
 .underline {
@@ -70,7 +71,7 @@ h4 {
     margin-right: 30px;
     text-decoration: none;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .dropdown {
@@ -87,13 +88,12 @@ h4 {
     margin-right: 16px;
     background-color: inherit;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
   text-decoration: underline;
   text-decoration-color: #FF7800;
-
 }
 
 .dropdown-content {
@@ -130,6 +130,24 @@ nav a:hover, .dropdown:hover .dropbtn {
   opacity: 1;
 }
 
+.contact-nav {
+  color: #fff!important;
+  background-color: #FF7800;
+  padding: 14px!important;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-weight: normal!important;
+}
+
+.contact-nav:active {
+  background-color: #e1e1e1;
+  text-decoration: none!important;
+  color: #FF7800!important;
+  font-weight: bold!important;
+}
+
+
+
 @media only screen and (min-width: 823px)  {
   .mobile-navbar {
     display: none;
@@ -165,12 +183,6 @@ nav a:hover, .dropdown:hover .dropbtn {
   background-color: rgba(255, 255, 255, 0.65);
   padding: 2rem 5rem;
 
-}
-
-#section-icon {
-  text-align: center;
-  margin: 2rem 0 0 0;
-  padding-bottom: 0;
 }
 
 /* Wrapper */
@@ -333,13 +345,14 @@ nav a:hover, .dropdown:hover .dropbtn {
   width: 100%;
 }
 
-/* Services setion 2 */
+/* Services section */
+
 
 .services-section {
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
-.caption-style-1 {
+.services {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -347,28 +360,32 @@ nav a:hover, .dropdown:hover .dropbtn {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  height: 250px;
-  overflow: hidden;
   margin-bottom: 1rem;
+  width: 100%;
 }
-.caption-style-1 li {
+
+.services li {
   float: left;
-  padding: 0px;
+  margin-bottom: 8px;
   position: relative;
   overflow: hidden;
+  width: calc(33% - 4px);
+  height: 250px;
+  overflow: hidden;
 }
-.caption-style-1 li:hover .caption {
+
+.services li:hover .caption {
   opacity: 1;
 }
-.caption-style-1 img {
+
+.services img {
   margin: 0px;
   padding: 0px;
   float: left;
   z-index: 4;
-  width: 400px;
-
 }
-.caption-style-1 .caption {
+
+.services .caption {
   cursor: pointer;
   position: absolute;
   opacity: 0;
@@ -378,18 +395,21 @@ nav a:hover, .dropdown:hover .dropbtn {
   -ms-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
-.caption-style-1 .blur {
+
+.services .blur {
   background-color: rgba(0,0,0,0.65);
   height: 300px;
   width: 400px;
   z-index: 5;
   position: absolute;
 }
-.caption-style-1 .caption-text h1 {
+
+.services .caption-text h1 {
   text-transform: uppercase;
   font-size: 24px;
 }
-.caption-style-1 .caption-text {
+
+.services .caption-text {
   z-index: 10;
   color: #fff;
   position: absolute;
@@ -405,6 +425,52 @@ nav a:hover, .dropdown:hover .dropbtn {
   border-radius: 4px;
   margin: 0 90px;
 }
+
+/* Form */
+
+form {
+  background-color: #e1e1e1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 3rem;
+}
+
+input, select, textarea {
+  margin: 0 10px 10px 0!important;
+  border-radius: 4px;
+}
+
+input[type="submit" i] {
+  background-color: #FF7800!important;
+  cursor: default;
+  border-width: 2px;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* Partners */
+.carousel {
+  background: none;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.carousel img {
+  display: block;
+  height: auto;
+  padding-right: 40px;
+}
+
+.flickity-prev-next-button {
+  background: hsla(0,0%,100%, 0.95)!important;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #FF7800!important;
+}
+
+
 /* Footer */
 
 footer {
