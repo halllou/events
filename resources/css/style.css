@@ -2,28 +2,30 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #534b42;
+  background-color: #534b42;
 }
 
 body {
   margin: 0;
+  background-color: #fff;
 }
 
 h1 {
   color: #FF7800;
   font-size: 2.4rem;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 }
 
 h2 {
-  text-align: center;
+  text-align: center!important;
   font-size: 2.1rem;
   padding-bottom: 1rem;
-  font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #FF7800;
   text-decoration-style: solid;
-  margin-top: 2rem!important;
+  margin-top: 2rem;
+  font-weight: 400;
 }
 
 .underline {
@@ -34,7 +36,6 @@ h2 {
 	margin-bottom: -1px;
 }
 
-
 h3 {
   margin: 1rem 0 0.5rem 0;
 }
@@ -42,6 +43,15 @@ h3 {
 h4 {
   margin: 0 0 0.5rem 0;
   color: #FF7800;
+}
+
+a {
+  text-decoration: none;
+  color: #FF7800;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /* Menu */
@@ -67,10 +77,8 @@ h4 {
     font-size: 16px;
     color: inherit;
     text-align: center;
-    padding: 14px 0;
-    margin-right: 30px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 14px;
     font-weight: 600;
 }
 
@@ -80,27 +88,27 @@ h4 {
 }
 
 .dropdown .dropbtn {
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     outline: none;
     color: inherit;
-    padding: 14px 0;
-    margin-right: 16px;
+    padding: 10px 16px;
     background-color: inherit;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 
-nav a:hover, .dropdown:hover .dropbtn {
-  text-decoration: underline;
+nav a:hover, .dropdown:hover, .dropbtn:hover {
   text-decoration-color: #FF7800;
+  background-color: #ddd;
+  border: none;
 }
 
 .dropdown-content {
     display: none;
     position: fixed;
     background-color: #f9f9f9;
-    min-width: 250px;
+    min-width: 320px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1100;
     right: 0;
@@ -130,12 +138,13 @@ nav a:hover, .dropdown:hover .dropbtn {
   opacity: 1;
 }
 
-.contact-nav {
+.contact-nav, .contact-nav:hover {
   color: #fff!important;
   background-color: #FF7800;
-  padding: 14px!important;
+  padding: 10px 16px!important;
   border-radius: 4px;
   margin-left: 10px;
+  margin-right: 30px;
   font-weight: normal!important;
 }
 
@@ -146,17 +155,37 @@ nav a:hover, .dropdown:hover .dropbtn {
   font-weight: bold!important;
 }
 
+.mobile-navbar {
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    top: 0;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
-
-@media only screen and (min-width: 823px)  {
+@media only screen and (min-width: 1009px)  {
   .mobile-navbar {
     display: none;
   }
 }
 
-@media only screen and (max-width: 824px)  {
+@media only screen and (max-width: 1010px)  {
   .navbar {
     display: none;
+  }
+
+  .dropdown {
+    margin-right: 30px;
   }
 }
 
@@ -164,12 +193,13 @@ nav a:hover, .dropdown:hover .dropbtn {
   font-size: 20px;
 }
 
-/* Banner */
+/* Banner - Main */
 
 .banner {
-  background-image: url("https://halllou.github.io/events/resources/images/banner2.bmp");
-  background-position: center;
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/banner3.jpg");
+  background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   height: 440px;
@@ -180,9 +210,57 @@ nav a:hover, .dropdown:hover .dropbtn {
 }
 
 .banner-text {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 5rem;
 
+}
+
+/* Banner - Marquee */
+
+.marquee {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 60px;
+}
+
+.contact-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/banners/contact.JPG");
+}
+
+.venue-finding-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/venue-finding.jpg");
+}
+
+.event-management-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/event-management.jpg");
+}
+
+.incentive-travel-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/incentive-travel.jpeg");
+}
+
+.online-registration-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/online-registration.jpeg");
+}
+
+.production-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/production.jpeg");
+}
+
+.team-activity-banner {
+  background-image: url("File://C:/Users/Louise87/tyler/resources/images/team-activity.jpeg");
+}
+
+.marquee-banner-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 4rem;
 }
 
 /* Wrapper */
@@ -191,6 +269,10 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin-left: 3rem;
   margin-right: 3rem;
   text-align: center;
+}
+
+.wrapper-left {
+  margin: 0 3rem 3rem 3rem;
 }
 
 /* About */
@@ -204,7 +286,6 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .about-container {
   padding-top: 1rem;
-
 }
 
 .about-left {
@@ -222,7 +303,6 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin: 3rem 0 3rem 0;
 }
 
-
 /* Team section */
 
 .caption-style-2 {
@@ -230,7 +310,7 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin: 2rem 0;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -241,6 +321,7 @@ nav a:hover, .dropdown:hover .dropbtn {
   padding: 0px;
   position: relative;
   overflow: hidden;
+  margin: 8px;
 }
 
 .caption-style-2 li:hover .caption {
@@ -315,13 +396,12 @@ nav a:hover, .dropdown:hover .dropbtn {
 .testimonial-avatar {
   width: 100px;
   border-radius: 50%;
-  border: 2px solid #FF7800;
+  border: 1px solid #FF7800;
 }
 
 .testimonial-quote {
   display: block;
   font-size: 20px;
-  font-weight: 300;
   padding: 10px 0;
 }
 
@@ -347,76 +427,63 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 /* Services section */
 
+.services-wrapper {
+  margin: 0 0.5rem 3rem 0.5rem;
+  margin-right: 0.5rem;
+  text-align: center;
+}
 
-.services-section {
-  margin: 2rem 0 2rem 0;
+.service-heading {
+  padding: 1rem 1rem 0 1rem;
+  font-size: 2rem;
 }
 
 .services {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin-top: 2rem;
 }
 
 .services li {
   float: left;
-  margin-bottom: 8px;
   position: relative;
   overflow: hidden;
   width: calc(33% - 4px);
-  height: 250px;
-  overflow: hidden;
-}
-
-.services li:hover .caption {
-  opacity: 1;
 }
 
 .services img {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   float: left;
   z-index: 4;
-}
-
-.services .caption {
-  cursor: pointer;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.45s ease-in-out;
-  -moz-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  -ms-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* this will make your image stay in the center though you may need a jquery backup to support IE/EDGE as there's no other way really to keep an image centered (that isn't a background image) using CSS that supports all browsers */
 }
 
 .services .blur {
   background-color: rgba(0,0,0,0.65);
-  height: 300px;
-  width: 400px;
+  height: 100%; /* to cover whole iamge */
+  width: 100%; /* to cover whole image */
   z-index: 5;
   position: absolute;
-}
-
-.services .caption-text h1 {
-  text-transform: uppercase;
-  font-size: 24px;
+  margin-top: -20px;
 }
 
 .services .caption-text {
   z-index: 10;
   color: #fff;
   position: absolute;
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  top: 70px;
+  top: 0; /* change to zero as its 100% height */
+  display: table; /* Make this display/act as a table so we can add a table-cell inside */
+}
+
+.caption-text div /* new div to wrap caption text to apply table-cell  */ {
+  display:table-cell; /* make it display/act as a table cell */
+  vertical-align:middle; /* now it is a table cell we can apply vertical alignment */
+  width:100%;
 }
 
 .service-cta {
@@ -426,9 +493,38 @@ nav a:hover, .dropdown:hover .dropbtn {
   margin: 0 90px;
 }
 
+.service-cta a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.services li:hover .caption {
+  opacity: 1;
+}
+
+.services .caption {
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+
+@media only screen and (max-width: 1254px) {
+
+  .service-heading {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.5rem;
+  }
+
+}
+
 /* Form */
 
 form {
+  align-items: center;
   background-color: #e1e1e1;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -437,7 +533,7 @@ form {
 }
 
 input, select, textarea {
-  margin: 0 10px 10px 0!important;
+  margin: 10px 10px 10px 0!important;
   border-radius: 4px;
 }
 
@@ -447,6 +543,7 @@ input[type="submit" i] {
   border-width: 2px;
   border: none;
   padding: 5px 10px;
+  color: #fff;
 }
 
 /* Partners */
@@ -470,6 +567,30 @@ input[type="submit" i] {
   fill: #FF7800!important;
 }
 
+/* Event Management */
+
+.reg-page-button {
+  padding: 0.5rem 1rem;
+  background-color: #FF7800;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Online Registration */
+
+.fa-chevron-right {
+  font-size: 14px!important;
+  padding-top: 2px;
+  color: #FF7800;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+.fa-ul>li {
+  line-height: 1.5rem;
+}
 
 /* Footer */
 
@@ -494,94 +615,3 @@ footer p a{
 .copy {
   font-size: 10px;
 }
-
-
-/* Team section old ..
-.team-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 1rem;
-}
-
-.team-member img {
-  width: 250px;
-} */
-
-/*Services old
-
-.container {
-  position: relative;
-  width: 50%;
-  border: 1px solid #fff;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  flex-grow: 1;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.container:hover .image {
-  background-color: #534b42;
-
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  color: #FF7800;
-  font-size: 16px;
-  padding: 16px 32px;
-  border: 1px solid #fff;
-  text-align: center;
-  background-color: #534B42;
-
-}
-
-.text a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.services {
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  margin: 0;
-  padding: 0;
-  height: 250px;
-  overflow: hidden;
-}
-
-.services-section {
-  margin: 2rem 0 3rem 0;
-} */
