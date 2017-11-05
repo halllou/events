@@ -196,7 +196,7 @@ nav a:hover, .dropdown:hover, .dropbtn:hover {
 /* Banner - Main */
 
 .banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/banner3.jpg");
+  background-image: url("https://halllou.github.io/events/resources/images/banner3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -231,31 +231,31 @@ nav a:hover, .dropdown:hover, .dropbtn:hover {
 }
 
 .contact-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/banners/contact.JPG");
+  background-image: url("https://halllou.github.io/events/resources/images/banners/contact.JPG");
 }
 
 .venue-finding-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/venue-finding.jpg");
+  background-image: url("https://halllou.github.io/events/resources/images/venue-finding.jpg");
 }
 
 .event-management-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/event-management.jpg");
+  background-image: url("https://halllou.github.io/events/resources/images/event-management.jpg");
 }
 
 .incentive-travel-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/incentive-travel.jpeg");
+  background-image: url("https://halllou.github.io/events/resources/images/incentive-travel.jpeg");
 }
 
 .online-registration-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/online-registration.jpeg");
+  background-image: url("https://halllou.github.io/events/resources/images/online-registration.jpeg");
 }
 
 .production-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/production.jpeg");
+  background-image: url("https://halllou.github.io/events/resources/images/production.jpeg");
 }
 
 .team-activity-banner {
-  background-image: url("File://C:/Users/Louise87/tyler/resources/images/team-activity.jpeg");
+  background-image: url("https://halllou.github.io/events/resources/images/team-activity.jpeg");
 }
 
 .marquee-banner-text {
