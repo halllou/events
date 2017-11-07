@@ -186,7 +186,11 @@ nav a:hover, .dropdown:hover, .dropbtn:hover {
   }
 
   .dropdown {
-    margin-right: 30px;
+    margin-right: 20px;
+  }
+
+  .dropdown-content {
+    min-width: 200px;
   }
 
 }
