@@ -1,12 +1,3 @@
-var flkty = new Flickity( '.main-gallery', {
-  cellAlign: 'left',
-  contain: true,
-  wrapAround: true,
-  prevNextButtons: false,
-  autoPlay: 5000
-});
-
-
 /* Menu collapse */
 
   $(document).ready(function(){
@@ -19,12 +10,10 @@ var flkty = new Flickity( '.main-gallery', {
 
 });
 
-</script>
-
-<style type="text/css">
-/* class to be hidden in css */
-.dropdown-content
-{
-display:none;
-}
-</style>
+var flkty = new Flickity( '.main-gallery', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 5000
+});
